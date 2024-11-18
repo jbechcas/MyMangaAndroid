@@ -1,5 +1,5 @@
 # MyManga
-
+![Vista previa de MyManga](assets/design.png)
 **MyManga** es una aplicación para Android diseñada para gestionar y disfrutar contenido relacionado con mangas. A continuación, se explica el diseño de la interfaz y las funciones de cada pantalla.
 
 ## Pantallas de la aplicación
