@@ -3,7 +3,7 @@
 MyManga es una aplicación diseñada para ofrecer a los usuarios una experiencia sencilla y eficiente al leer y administrar sus mangas favoritos. A continuación, se describen las funcionalidades principales basadas en las pantallas mostradas en el wireframe.
 
 ---
-## Base de datos local y strapi
+## Base de Datos Local y Strapi
 
 ![design-MyManga](assets/base-dato.png)
 <br>
