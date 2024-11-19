@@ -5,11 +5,11 @@ MyManga es una aplicación diseñada para ofrecer a los usuarios una experiencia
 ---
 ## Base de datos local y strapi
 
-![design-MyManga](assets/design.png)
+![design-MyManga](assets/base-dato.png)
 <br>
 ## Diseño Aplicación
 
-![design-MyManga](assets/base-dato.png)
+![design-MyManga](assets/design.png)
 <br>
 ## Pantallas de la Aplicación
 
