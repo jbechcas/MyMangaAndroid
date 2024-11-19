@@ -1,75 +1,66 @@
 # MyManga
-![Vista previa de MyManga](assets/design.png)
-<br>
-**MyManga** es una aplicación para Android diseñada para gestionar y disfrutar contenido relacionado con mangas. A continuación, se explica el diseño de la interfaz y las funciones de cada pantalla.
-## Base de datos local y strapi
-![Vista previa de MyManga](assets/base-dato.png)
-<br>
-## Pantallas de la aplicación
 
-### 1. Pantalla de inicio de sesión
-Esta es la primera pantalla que verá el usuario al abrir la aplicación. Sus funciones principales son:
-- Ingresar el *usuario* o *correo electrónico* y la *contraseña* para iniciar sesión.
-- Botón de registro para crear una cuenta si aún no se tiene.
+MyManga es una aplicación diseñada para ofrecer a los usuarios una experiencia sencilla y eficiente al leer y administrar sus mangas favoritos. A continuación, se describen las funcionalidades principales basadas en las pantallas mostradas en el wireframe.
 
 ---
 
-### 2. Pantalla principal (Inicio)
-Una vez que el usuario inicia sesión, será llevado a esta pantalla principal. 
-- Muestra una cuadrícula de mangas disponibles (con imágenes de portada y nombres debajo).
-- Incluye un menú de navegación inferior con cuatro opciones:
-  - **Inicio** (icono de casa): Volver a esta pantalla principal.
-  - **Favoritos** (icono de corazón): Ver mangas marcados como favoritos.
-  - **Historial** (icono de reloj): Acceder al historial de mangas vistos.
-  - **Perfil** (icono de usuario): Gestionar la cuenta del usuario.
+## Pantallas de la Aplicación
+
+### 1. Pantalla de Inicio
+- **Descripción**: Muestra un espacio principal para buscar mangas. Los usuarios pueden ingresar un término en la barra de búsqueda para encontrar el manga que desean.
+- **Funciones**:
+  - Entrada de texto para búsqueda de mangas.
+  - Botón de "Buscar" para iniciar la búsqueda.
+
+### 2. Pantalla de Resultados de Búsqueda
+- **Descripción**: Presenta una lista de resultados de mangas basados en la búsqueda realizada.
+- **Funciones**:
+  - Visualización de múltiples mangas en formato de tarjeta.
+  - Posibilidad de seleccionar un manga para ver más detalles.
+
+### 3. Pantalla de Favoritos
+- **Descripción**: Lista de mangas marcados como favoritos por el usuario.
+- **Funciones**:
+  - Similar al diseño de los resultados de búsqueda, muestra los mangas favoritos en formato de tarjetas.
+  - Los usuarios pueden navegar y seleccionar cualquier manga para más detalles.
+
+### 4. Pantalla de Detalles del Manga
+- **Descripción**: Muestra la información detallada de un manga seleccionado.
+- **Funciones**:
+  - Información del manga: título, autor, y fecha de publicación.
+  - Lista de capítulos disponibles.
+  - Botones interactivos para navegar a capítulos específicos.
+
+### 5. Pantalla de Perfil de Usuario
+- **Descripción**: Permite al usuario gestionar su perfil.
+- **Funciones**:
+  - Visualización del nombre de usuario y correo electrónico.
+  - Botón para editar el perfil del usuario.
+  - Botón para cerrar sesión.
+
+### 6. Pantalla de Edición de Perfil
+- **Descripción**: Los usuarios pueden actualizar su información personal.
+- **Funciones**:
+  - Campos de texto para editar información como nombre o correo electrónico.
+  - Botón para guardar los cambios realizados.
 
 ---
 
-### 3. Pantalla de favoritos
-- Muestra una lista de mangas que el usuario ha marcado como favoritos.
-- El formato visual es similar al de la pantalla principal, con portadas y nombres de los mangas.
+## Navegación
+
+- Los usuarios pueden desplazarse fácilmente entre las secciones mediante la barra de navegación en la parte inferior:
+  - **Inicio**: Pantalla principal para buscar mangas.
+  - **Favoritos**: Acceso rápido a los mangas favoritos del usuario.
+  - **Perfil**: Gestión de la cuenta del usuario.
 
 ---
 
-### 4. Pantalla de historial
-- Aquí se encuentra una lista de mangas que el usuario ha leído o explorado recientemente.
-- También utiliza un formato de cuadrícula similar al de favoritos y la pantalla principal.
+## Funciones Clave
+
+1. **Buscar Manga**: Los usuarios pueden buscar mangas mediante la barra de búsqueda en la pantalla de inicio.
+2. **Favoritos**: Los usuarios pueden marcar mangas como favoritos para acceder a ellos rápidamente.
+3. **Gestión de Usuario**: Los usuarios pueden editar su perfil y cerrar sesión desde la sección de perfil.
 
 ---
 
-### 5. Pantalla de registro
-- Permite a nuevos usuarios crear una cuenta llenando los siguientes campos:
-  - Nombre.
-  - Apellidos.
-  - Correo.
-  - Usuario.
-  - Contraseña.
-- Incluye un botón para completar el registro y crear la cuenta.
-
----
-
-### 6. Pantalla de perfil
-- Muestra información del usuario, como su nombre (ejemplo: USER04) y su correo electrónico.
-- Dos opciones principales:
-  - **Editar perfil**: Permite modificar los datos del usuario.
-  - **Cerrar sesión**: Salir de la aplicación.
-
----
-
-### 7. Pantalla de edición de perfil
-- Desde esta pantalla, el usuario puede actualizar sus datos, incluyendo:
-  - Nombre.
-  - Apellidos.
-  - Correo.
-  - Usuario.
-  - Contraseña.
-- Un botón de "Aplicar cambios" guarda las actualizaciones realizadas.
-
----
-
-## Navegación general
-La aplicación tiene un menú de navegación inferior accesible en varias pantallas que facilita moverse entre las secciones principales: Inicio, Favoritos, Historial y Perfil.
-
----
-
-¡Gracias por usar **MyManga**! 🎉
+¡Gracias por usar MyManga! 🚀
