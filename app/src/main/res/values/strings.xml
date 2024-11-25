@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">MyManga</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="labelLoginUser">Usuario</string>
-    <string name="labelLoginPassword">Password</string>
-    <string name="loginButtonText">Iniciar Sesión</string>
-</resources>
