@@ -8,8 +8,6 @@
     android:gravity="center"
     android:background="#F5F5F5">
 
-    <!-- TODO: Update blank fragment layout -->
-    <!-- Logo aplicación -->
     <ImageView
         android:id="@+id/login_logo"
         android:layout_width="349dp"
