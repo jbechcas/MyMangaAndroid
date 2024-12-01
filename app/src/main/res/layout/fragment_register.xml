@@ -50,6 +50,17 @@
         android:background="@android:drawable/edit_text"
         android:drawablePadding="8dp"/>
 
+    <EditText
+        android:id="@+id/confirm_password_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:drawable/edit_text"
+        android:drawablePadding="8dp"/>
+
     <!-- Botón de inicio de sesión -->
     <Button
         android:id="@+id/register_button"
