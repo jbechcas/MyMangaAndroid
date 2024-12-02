@@ -8,4 +8,6 @@
     <string name="register">Registrarse</string>
     <string name="login">Iniciar Sesión</string>
     <string name="noAccount">¿No tienes cuenta?</string>
+    <string name="logo_aplicacion">Logo de la aplicación</string>
+    <string name="repeat_password">repite la contraseña</string>
 </resources>
