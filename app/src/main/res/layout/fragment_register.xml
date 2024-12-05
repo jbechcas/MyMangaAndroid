@@ -5,8 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center"
-    android:background="#F5F5F5">
+    android:gravity="center">
 
     <ImageView
         android:id="@+id/login_logo"
@@ -73,9 +72,7 @@
         android:layout_height="wrap_content"
         android:text="@string/register"
         android:textStyle="bold"
-        android:padding="12dp"
-        android:backgroundTint="#6200EE"
-        android:textColor="#FFFFFF"/>
+        android:padding="12dp"/>
 
 
 </LinearLayout>

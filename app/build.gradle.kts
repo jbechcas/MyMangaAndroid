@@ -41,6 +41,9 @@ android {
 }
 
 dependencies {
+    //Dependencias de material design
+    implementation(libs.material.v190)
+
     //Dependencias hilt
     implementation(libs.hilt.android.v2511)
     kapt(libs.dagger.hilt.android.compiler)

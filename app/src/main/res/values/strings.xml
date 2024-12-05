@@ -3,8 +3,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="email">correo electrónico</string>
-    <string name="username">usuario</string>
-    <string name="password">contraseña</string>
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
     <string name="register">Registrarse</string>
     <string name="login">Iniciar Sesión</string>
     <string name="noAccount">¿No tienes cuenta?</string>
