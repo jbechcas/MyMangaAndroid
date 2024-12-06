@@ -35,10 +35,10 @@ class RegisterFragment : Fragment() {
 
         // Configurar el botón de registro
         binding.registerButton.setOnClickListener {
-            val username = binding.usernameRegister.text.toString().trim()
-            val email = binding.emailRegister.text.toString().trim()
-            val password = binding.passwordRegister.text.toString().trim()
-            val confirmPassword = binding.confirmPasswordRegister.text.toString().trim()
+            val username = binding.usernameRegister.editText?.text.toString().trim()
+            val email = binding.emailRegister.editText?.text.toString().trim()
+            val password = binding.passwordRegister.editText?.text.toString().trim()
+            val confirmPassword = binding.confirmPasswordRegister.editText?.text.toString().trim()
 
             if (validateInputs(username, email, password, confirmPassword)) {
                 authViewModel.register(username, email, password)
@@ -84,7 +84,7 @@ class RegisterFragment : Fragment() {
 
     private fun handleRegisterError(exception: Throwable) {
         val errorMessage = exception.message ?: "Error desconocido"
-        Toast.makeText(requireContext(), "Error en el registro: $errorMessage", Toast.LENGTH_LONG).show()
+        Toast.makeText(requireContext(), "Ha ocurrido un error", Toast.LENGTH_LONG).show()
     }
 
     private fun showToast(message: String) {

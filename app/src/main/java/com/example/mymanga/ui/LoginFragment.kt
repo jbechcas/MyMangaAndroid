@@ -36,8 +36,9 @@ class LoginFragment : Fragment() {
 
         // Configuración del botón de login
         binding.loginButton.setOnClickListener {
-            val username = binding.usernameInput.text.toString().trim()
-            val password = binding.passwordInput.text.toString().trim()
+            val username = binding.usernameInput.editText?.text.toString().trim()
+            val password = binding.passwordInput.editText?.text.toString().trim()
+
 
             if (username.isNotEmpty() && password.isNotEmpty()) {
                 // Llamada al ViewModel para realizar el login
@@ -60,11 +61,11 @@ class LoginFragment : Fragment() {
                 findNavController().navigate(R.id.action_loginFragment_to_homeFragment, null, navOptions)
             }.onFailure { exception ->
                 // Error en el login
-                Toast.makeText(requireContext(), "Error: ${exception.message}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Ha ocurrido un error", Toast.LENGTH_SHORT).show()
             }
         }
 
-        // Configuración del enlace para registrarse
+        // Enlace para registrarse
         binding.registerLink.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
         }
