@@ -4,20 +4,21 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:gravity="center">
+    android:padding="16dp">
 
     <!-- Logo aplicación -->
     <ImageView
         android:id="@+id/login_logo"
-        android:layout_width="306dp"
-        android:layout_height="320dp"
+        android:layout_width="279dp"
+        android:layout_height="279dp"
+        android:layout_gravity="center_horizontal"
         android:contentDescription="@string/logo_aplicacion"
         android:src="@drawable/logo" />
 
     <!-- Campo de texto para el nombre de usuario -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/usernameInput"
+        android:layout_gravity="center_horizontal"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:hint="@string/username"
@@ -38,6 +39,7 @@
     <!-- Campo de texto para la contraseña -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password_input"
+        android:layout_gravity="center_horizontal"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:hint="@string/password"
@@ -58,6 +60,7 @@
     <Button
         android:layout_marginTop="12dp"
         android:id="@+id/login_button"
+        android:layout_gravity="center_horizontal"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:text="@string/login"
@@ -65,6 +68,7 @@
         android:padding="12dp"/>
     <TextView
         android:id="@+id/register_link"
+        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/noAccount"

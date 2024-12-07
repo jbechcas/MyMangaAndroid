@@ -39,6 +39,7 @@ class RegisterFragment : Fragment() {
             val email = binding.emailRegister.editText?.text.toString().trim()
             val password = binding.passwordRegister.editText?.text.toString().trim()
             val confirmPassword = binding.confirmPasswordRegister.editText?.text.toString().trim()
+            val arrowLeft = binding.arrowLeft
 
             if (validateInputs(username, email, password, confirmPassword)) {
                 authViewModel.register(username, email, password)
@@ -53,6 +54,10 @@ class RegisterFragment : Fragment() {
             }.onFailure { exception ->
                 handleRegisterError(exception)
             }
+        }
+
+        binding.arrowLeft.setOnClickListener {
+            findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
         }
     }
 

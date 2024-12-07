@@ -10,4 +10,8 @@
     <string name="noAccount">¿No tienes cuenta?</string>
     <string name="logo_aplicacion">Logo de la aplicación</string>
     <string name="repeat_password">Repite la contraseña</string>
+    <string name="fragment_profile">Este es el profile</string>
+    <string name="home_fragment">Este es el home</string>
+    <string name="text_label_home">Home</string>
+    <string name="text_label_profile">Profile</string>
 </resources>
