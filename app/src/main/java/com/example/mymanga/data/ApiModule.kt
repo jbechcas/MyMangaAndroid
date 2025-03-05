@@ -16,7 +16,7 @@ object ApiModule {
     @Singleton
     fun provideRetrofit(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://tasks-service-iigq.onrender.com/api/") // URL base de la API
+            .baseUrl("https://tasks-crd9.onrender.com/api/") // URL base de la API
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
