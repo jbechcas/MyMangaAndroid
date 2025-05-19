@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MyManga</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Correo electrónico</string>
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="register">Registrarse</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="noAccount">¿No tienes cuenta?</string>
+    <string name="logo_aplicacion">Logo de la aplicación</string>
+    <string name="repeat_password">Repite la contraseña</string>
+    <string name="text_label_1" />
+    <string name="manga_title_icon">Mangas</string>
+    <string name="chapter_title_icon">Capitulos</string>
+    <string name="map_title_icon">Mapa</string>
+    <string name="profile_title_icon">Perfil</string>
+    <string name="Perfil" />
+    <string name="texto_pefil">Estas en el perfil</string>
+    <string name="texto_chapter">estas en chapters</string>
+    <string name="texto_manga">Aqui podras ver los mangas</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Eliminar</string>
+    <string name="manga_image">Imagen del manga</string>
+    <string name="add_manga">Añadir manga</string>
+    <string name="title">Título</string>
+    <string name="description">Descripción</string>
+    <string name="image_url">URL de la imagen</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+</resources>
