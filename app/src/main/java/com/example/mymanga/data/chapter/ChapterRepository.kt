@@ -1,25 +1,47 @@
 package com.example.mymanga.data.chapter
 
 import com.example.mymanga.data.ApiService
+import com.example.mymanga.data.local.dao.ChapterDao
+import com.example.mymanga.data.local.entities.ChapterEntity
 import com.example.mymanga.data.network.ChapterRequest
 import okhttp3.ResponseBody
 import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class ChapterRepository @Inject constructor(private val apiService: ApiService) {
+class ChapterRepository @Inject constructor(
+    private val apiService: ApiService,
+    private val chapterDao: ChapterDao
+) {
 
     suspend fun getChapters(): List<Chapter> {
-        val response = apiService.getChapters()
-        return response.data.map { strapiData ->
-            Chapter(
-                id = strapiData.id,
-                title = strapiData.attributes.title ?: "Sin título",
-                description = strapiData.attributes.description ?: "Sin descripción",
-                mangaId = extractMangaId(strapiData.attributes.manga),
-                mangaTitle = getMangaTitle(strapiData.attributes.manga)
-            )
+        return try {
+            val response = apiService.getChapters()
+            val chaptersFromApi = response.data.map { strapiData ->
+                Chapter(
+                    id = strapiData.id,
+                    title = strapiData.attributes.title ?: "Sin título",
+                    description = strapiData.attributes.description ?: "Sin descripción",
+                    mangaId = extractMangaId(strapiData.attributes.manga),
+                    mangaTitle = getMangaTitle(strapiData.attributes.manga)
+                )
+            }
+
+            if (chaptersFromApi.isNotEmpty()) {
+                val entities = chaptersFromApi.map { ChapterEntity.fromChapter(it) }
+                chapterDao.clearChapters()
+                chapterDao.insertChapters(entities)
+                chaptersFromApi
+            } else {
+                getChaptersFromLocal()
+            }
+        } catch (e: Exception) {
+            getChaptersFromLocal()
         }
+    }
+
+    private suspend fun getChaptersFromLocal(): List<Chapter> {
+        return chapterDao.getAllChapters().map { it.toChapter() }
     }
 
     suspend fun createChapter(chapter: Chapter): Chapter {
